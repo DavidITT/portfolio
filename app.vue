@@ -1,15 +1,10 @@
 <template>
-  <nav>
-    <ul>
-      <li>
-        <NuxtLink to="/">Home</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/about">About</NuxtLink>
-      </li>
-    </ul>
-  </nav>
-  <div>
-    <NuxtPage />
-  </div>
+  <NuxtLayout>
+    <NuxtPage/>
+  </NuxtLayout>
 </template>
+
+<!--<script setup>
+const layout = 'another'
+</script>-->
+
