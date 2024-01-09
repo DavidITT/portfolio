@@ -16,6 +16,10 @@
 
 <script setup>
 
+const colorMode = useColorMode()
+console.log(colorMode.preference)
+colorMode.preference = 'light'
+
 useHead({
   titleTemplate: '%s - David Villeda',
   link: [
@@ -34,8 +38,14 @@ useHead({
 </script>
 
 <style>
+
 body {
   font-family: 'Montserrat';
 }
+
+body {
+   @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300
+}
+
 </style>
 
