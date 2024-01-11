@@ -32,8 +32,6 @@ import {computed} from "vue";
 
 const {data, pending, error} = await useFetch('https://api.github.com/users/DavidITT/repos')
 
-console.table(data.value)
-
 const repos = computed(
     () => data.value.filter(repo => repo.description)
         .sort((a, b) => b.stargazers_count - a.stargazers_count)

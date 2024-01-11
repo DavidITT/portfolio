@@ -23,13 +23,13 @@ useHead({
   htmlAttrs: {
     lang: 'es'
   },
-  link: [
+ /* link: [
     {
       rel: 'icon',
       type: 'image/png',
       href: '/favicon.png'
     }
-  ]
+  ]*/
 })
 
 </script>
