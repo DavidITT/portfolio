@@ -1,21 +1,11 @@
 <template>
-  <div class="container mx-auto max-w-2xl">
-    <header class="flex justify-between items-center mt-5">
-      <div class="flex flex-items-center space-x-12">
-        <div>
-          <NuxtLink to="/" class="text-xl font-semibold p-2 hover:bg-gray-200">David Villeda</NuxtLink>
-        </div>
-        <Menu />
-      </div>
-      <ClientOnly>
-        <ColorModeSelector />
-      </ClientOnly>
+  <div class="container mx-auto">
+    <header>
+      <Menu/>
     </header>
-
-    <main class="p-2 mt-10">
+    <main class="pt-20 mt-10 max-w-2xl">
       <slot/>
     </main>
-
   </div>
 </template>
 

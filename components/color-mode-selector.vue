@@ -1,7 +1,7 @@
 <template>
   <!-- Font Awesome icon that acts as a button to toggle color mode -->
   <div class="flex space-x-1 items-center">
-    <span class="text-gray-500 dark:text-white text-xs" v-if="showNextModeLabel">
+    <span class="text-gray-500 dark:text-white text-xs hidden md:inline-block" v-if="showNextModeLabel">
       Change to {{ nextMode }}
     </span>
     <font-awesome-icon role="button"
@@ -15,7 +15,9 @@
 </template>
 
 <script setup>
+
 const showNextModeLabel = ref(false)
+
 // Get the current color mode
 const colorMode = useColorMode()
 

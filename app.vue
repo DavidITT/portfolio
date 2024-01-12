@@ -4,7 +4,14 @@
   </NuxtLayout>
 </template>
 
-<!--<script setup>
-const layout = 'another'
-</script>-->
+<script setup>
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+  initFlowbite();
+})
+
+</script>
 
